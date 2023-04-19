@@ -26,7 +26,7 @@ t1 = [0.5, 0.7], t2 = [0.3, 0.4], mu1=0.2, mu2=0.5 and vary mean_degree1 in {1,2
 	- tf1 :transmissibility of strain-1 in layer-f
 	- tf2 :transmissibility of strain-2 in layer-f
 	- c :the ratio tw1/tf1 and tw2/tf2 
-- run 2-joint-impact-mutations-opening.py; the generated plot is saved with the file name "{c}_{tf1}_{tf2}.png" 
+- run 2-joint-impact-mutations-opening.py; the generated plot is saved with the file name "{c}\_{tf1}\_{tf2}.png" 
 - the default initialisation of the code corresponds to the plot for c=1.0, tf1=0.4, tf2=0.8 in Figure 6
 - For Figure 6 plots, vary c in {1.0,1.5} and (tf1,tf2) in {(0.4,0.8),(0.2,0.9),(0.3,0.5)}
 - For SI Figure S3, vary c in {1.0,1.2,1.5}  while keeping tf1=0.4, tf2=0.8 constant. The probability $P_\mu^{1-->2}$ is obtained through Equations 21-23 in SI Appendix.
