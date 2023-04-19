@@ -62,8 +62,8 @@ t1 = [0.5, 0.7], t2 = [0.3, 0.4], mu1=0.2, mu2=0.5 and vary mean_degree1 in {1,2
 
 
 
-Note: Supplementary information with additional proofs and discussion are presented in the SI Appendix of the paper 'Spreading Processes with Mutations over Multi-layer Networks', Sood, Sridhar, Eletreby, Wu, Levin, Poor, Yagan 2023.
-Please contact the authors for any questions/feedback.
+*Note: Supplementary information with additional proofs and discussion are presented in the SI Appendix of the paper 'Spreading Processes with Mutations over Multi-layer Networks', Sood, Sridhar, Eletreby, Wu, Levin, Poor, Yagan 2023.
+Please contact the authors for any questions/feedback.*
 
 
 
