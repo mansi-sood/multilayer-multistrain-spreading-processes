@@ -57,14 +57,12 @@ def create_network_pl_cutoff(a,b,num_nodes):
     return ig.Graph.Degree_Sequence(list(degree_sequence))
 
 def runExp(i, mean_degree1, mean_degree2,num_nodes, T1, mu1, T2, mu2):
-    print('now running experiment ' + str(i))
     G1 = create_network(mean_degree1, num_nodes)
     G2 = create_network(mean_degree2, num_nodes)
     finalFrac = evolution(G1, G2, T1, mu1, T2, mu2)
     np.save('experiment_files/final_fractions_' + str(i), finalFrac)
 
 def runExp_pl_cutoff(i, a1, b1, a2, b2, num_nodes, T1, mu1, T2, mu2):
-    print('now running experiment ' + str(i))
     G1 = create_network_pl_cutoff(a1, b1, num_nodes)
     G2 = create_network_pl_cutoff(a2, b2, num_nodes)
     finalFrac = evolution(G1, G2, T1, mu1, T2, mu2)
@@ -244,7 +242,6 @@ num_epidemics = 0
 # copying data to arrays
 for i in range(numExp):
     cumulativeInfections = np.load('experiment_files/final_fractions_' + str(i) + '.npy')
-    #print(cumulativeInfections)
     if sum(cumulativeInfections) > thrVal:
         total_final_frac = total_final_frac + cumulativeInfections
         num_epidemics += 1
